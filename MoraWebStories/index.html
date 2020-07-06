@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Web stories</title>
+</head>
+
+<body onload="move()">
+
+  <div class="space">
+
+    <header>
+      <h1>Web Stories</h1>
+    </header>
+
+    <script> var pixabayWidget = { 'key': '17295564-dcb4d0643be5630aa1204453e' }</script>
+    <script src="/pixabay.js" async defer></script>
+
+    <br>
+
+    <br>
+
+    <section>
+      <br>
+
+      <div class="js-Carousel" id="carousel">
+
+
+        <div id="progress">
+          <div id="bar"></div>
+        </div>
+
+
+
+        <br>
+
+        <ul>
+          <li>
+
+            <div class="pixabay_widget" data-search="hd" data-row-height="600" data-max-rows="1"></div>
+
+          </li>
+          <li>
+            <div class="pixabay_widget" data-search="green" data-row-height="600" data-max-rows="1"></div>
+          </li>
+          <li>
+            <div class="pixabay_widget" data-search="flower" data-row-height="600" data-max-rows="1"></div>
+          </li>
+
+          <li>
+            <div class="pixabay_widget" data-search="people" data-row-height="600" data-max-rows="1"></div>
+          </li>
+
+
+          <li>
+            <div class="pixabay_widget" data-search="roses" data-row-height="600" data-max-rows="1"></div>
+          </li>
+
+
+        </ul>
+
+      </div>
+  </div>
+
+  </section>
+
+  <script src="app.js"></script>
+
+  <script>
+
+    var carousel = new Carousel({
+      elem: 'carousel',
+      dots: true,
+      arrows: true,
+      buttons: true,
+      autoplay: true,
+      infinite: true
+
+    });
+  </script>
+
+</body>
+
+</html>

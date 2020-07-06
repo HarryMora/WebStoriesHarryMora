@@ -1,0 +1,150 @@
+
+  
+  body {
+    font-family: 'Lexend Exa', sans-serif;
+    background: url('./img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+  }
+
+  .space {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 50px 0px 20px 0px;
+    padding: 32px;
+    text-align: center;
+    background: black;
+    font-size: 40px;
+  }
+ 
+ .js-Carousel {
+ 
+  background: #16246800;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 600px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.js-Carousel > ul {
+  height: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  width: 9999px;
+}
+
+.js-Carousel > ul li {
+  display: inline-block;
+  width: 600px;
+  transition: margin-left 0s ease;
+}
+
+.js-Carousel > ul li img {
+  max-width: 100%;
+}
+
+.js-Carousel .js-Carousel-arrowPrev,
+.js-Carousel .js-Carousel-arrowNext {
+  background: transparent;
+  border: 0;
+  color: #ffffff00;
+  opacity: 0.5;
+  cursor: pointer;
+  font: 200 5em monospace;
+  height: 450px;
+  outline: 0;
+  position: absolute;
+  top: 0;
+  width: 90px;
+  transition: all 0s ease;
+}
+
+.js-Carousel .js-Carousel-arrowPrev:hover,
+.js-Carousel .js-Carousel-arrowNext:hover {
+  color: #ffffff00;
+}
+
+.js-Carousel .js-Carousel-arrowPrev {
+  left: 0;
+}
+
+.js-Carousel .js-Carousel-arrowNext {
+  right: 0;
+}
+
+.js-Carousel .js-Carousel-dots {
+  display: inline-block;
+  height: 15px;
+  position: absolute;
+  bottom: 30px;
+  right: 1px;
+  width: auto;
+}
+
+.js-Carousel .js-Carousel-dots li {
+  background: #aaaaaa;
+  cursor: pointer;
+  display: inline-block;
+  height: 5px;
+  margin: 0 20px;
+  width: 30px;
+  transition: all 0s ease;
+  border-radius: 150px;
+ 
+}
+.js-Carousel .js-Carousel-dots li.is-active {
+  background: #ffffff;
+  box-shadow: 0 0 3px 3px #9418ba;
+}
+
+.js-Carousel .js-Carousel-btnStop,
+.js-Carousel .js-Carousel-btnPlay {
+
+  border: 0;
+  cursor: pointer;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  text-align: center;
+  width: 40px;
+  color: #9418ba;
+  background-color: #ffffff;
+  border-radius: 150px;
+  
+}
+
+.js-Carousel .js-Carousel-btnStop {
+  left: 100px; 
+}
+
+#progress {
+  width: 600;
+  height: 8px;
+  background-color: rgba(161, 161, 161, 0.747);
+  border-radius: 150px   
+}
+
+/*# por requerir ID en la funcion de la barra*/
+#bar {
+  width: 600px;
+  height: 8px;
+  background-color: #ffffff;
+  left: 10px;
+  border-radius: 150px;
+  
+
+}
